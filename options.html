@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>One-Click Reply Draft — Settings</title>
+<style>
+  body {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    width: 340px;
+    padding: 16px;
+    color: #2b2b2b;
+  }
+  h1 { font-size: 16px; margin: 0 0 4px; }
+  p { font-size: 12px; color: #666; line-height: 1.4; }
+  label { display: block; font-size: 12px; font-weight: 600; margin: 12px 0 4px; }
+  input[type="password"] {
+    width: 100%; box-sizing: border-box; padding: 8px;
+    border-radius: 6px; border: 1px solid #cfcfcf; font-size: 13px;
+  }
+  button {
+    margin-top: 12px; width: 100%; background: #4285f4; color: white;
+    border: none; border-radius: 6px; padding: 8px; font-size: 13px;
+    font-weight: 600; cursor: pointer;
+  }
+  button:hover { background: #3367d6; }
+  #status { margin-top: 8px; font-size: 12px; min-height: 16px; }
+  a { color: #4285f4; }
+</style>
+</head>
+<body>
+  <h1>One-Click Reply Draft</h1>
+  <p>
+    Paste a Gemini API key from
+    <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a>.
+    It's free (no credit card needed) and stored only in your browser, sent directly to Google's Gemini API when you click the extension icon.
+  </p>
+
+  <label for="apiKey">Gemini API key</label>
+  <input type="password" id="apiKey" placeholder="AIza..." autocomplete="off" />
+
+  <button id="save">Save key</button>
+  <div id="status"></div>
+</body>
+<script src="options.js"></script>
+</html>
